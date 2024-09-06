@@ -1,9 +1,10 @@
+build
+coverage
+node_modules
+
+# Encore
 .encore
 encore.gen.go
 encore.gen.cue
 /.encore
-node_modules
 /encore.gen
-
-# Emacs
-*~

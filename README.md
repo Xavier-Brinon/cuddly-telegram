@@ -11,6 +11,7 @@ encore app create my-app-name --example=ts/hello-world
 ```
 
 ## Running locally
+
 ```bash
 encore run
 ```

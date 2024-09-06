@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
-import { api } from "encore.dev/api";
+import { api } from 'encore.dev/api'
 
 // Welcome to Encore!
 // This is a simple "Hello World" project to get you started.
@@ -18,15 +18,15 @@ import { api } from "encore.dev/api";
 //	curl http://localhost:4000/hello/World
 //
 export const get = api(
-  { expose: true, method: "GET", path: "/hello/:name" },
+  { expose: true, method: 'GET', path: '/hello/:name' },
   async ({ name }: { name: string }): Promise<Response> => {
-    const message = `Hello ${name}!`;
-    return { message };
-  }
-);
+    const message = `Hello ${name}!`
+    return { message }
+  },
+)
 
 interface Response {
-  message: string;
+  message: string
 }
 
 // ==================================================================
